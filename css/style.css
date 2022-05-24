@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 body{
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 header{
@@ -49,6 +49,13 @@ nav ul li a:hover{
 #groupImg img{
     width: 100%;
 
+}
+article div{
+    width: 100%
+}
+#logo_rhcp{
+    width: 25%;
+    float: right;
 }
 
 #infosGroup{
@@ -111,5 +118,67 @@ footer{
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+}
+
+
+/***FORM***/
+
+
+.fieldsetForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fieldsetForm_detail input{
+    width: 10rem;
+}
+select{
+    width: 10.5rem;
+}
+.fieldsetForm_group{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+label{
+    margin-right: 0.5rem;
+}
+
+.fieldsetForm_detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+table{
+    margin: 0 auto;
+}
+
+td{
+    text-align: center;
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttonsGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.buttonsGroup input{
+    margin: 0 1rem;
+}
+.buttonsGroup input:hover{
+    background-color: #00bcd4;
+    color: white;
+}
+input:hover{
+    cursor: pointer;
 }
 

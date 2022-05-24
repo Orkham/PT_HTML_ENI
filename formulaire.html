@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>My music</title>
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/mymusic_logo.png" alt="logo mymusic"></a>
+
+    <h1>My Music</h1>
+    <h2>Red Hot Chili Peppers</h2>
+    <div id="userStatus">
+        <img src="images/avatar/avatar-tux_picachu.jpg" alt="avatar utilisateur" id="userAvatar">
+        <div id="userStatus_title">
+            <p id="name">ENI,</p>
+            <p id="connexionStatus">connecté</p>
+        </div>
+        <div>
+            <a href="formulaire.html">Mon compte</a> |
+            <a href="index.html">Déconnexion</a>
+        </div>
+    </div>
+</header>
+<hr>
+<form action="post">
+    <h3>Mon compte</h3>
+    <fieldset class="fieldsetForm">
+        <legend>Vos informations personnelles</legend>
+        <div class="fieldsetForm_group">
+            <div class="fieldsetForm_detail">
+                <label for="lastName">Nom :</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div class="fieldsetForm_detail">
+                <label for="firstName">Prénom :</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div class="fieldsetForm_detail">
+                <label for="email">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="fieldsetForm_detail">
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+
+        </div>
+
+        <div class="fieldsetForm_group">
+            <div class="fieldsetForm_detail">
+                <label for="birthDate">Date de naissance :</label>
+                <input type="date" name="birthDate" id="birthDate">
+            </div>
+            <div class="fieldsetForm_detail">
+                <label for="favoriteGroup">Groupe préféré :</label>
+                <select name="favoriteGroup" id="favoriteGroup">
+                    <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
+                    <option value="Metallica">Metallica</option>
+                    <option value="AC/DC">AC/DC</option>
+                    <option value="Queen">Queen</option>
+                    <option value="Pink Floyd">Pink Floyd</option>
+                    <option value="The Beatles">The Beatles</option>
+                    <option value="Led Zeppelin">Led Zeppelin</option>
+                    <option value="The Rolling Stones">The Rolling Stones</option>
+                </select>
+            </div>
+            <div class="fieldsetForm_detail">
+                <label for="phone">Téléphone :</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="fieldsetForm_detail">
+                <label for="passwordRepeat">Répéter le mot de passe :</label>
+                <input type="password" name="passwordRepeat" id="passwordRepeat">
+            </div>
+        </div>
+
+    </fieldset>
+
+    <fieldset class="fieldsetForm">
+        <legend>Votre formule abonnement</legend>
+
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>
+                    <input type="radio" name="subscription" id="xtraPremium">
+                    <label for="xtraPremium">Premium +</label>
+                </th>
+                <th><input type="radio" name="subscription" id="premium">
+                    <label for="premium">Premium</label>
+                </th>
+                <th><input type="radio" name="subscription" id="discovery">
+                    <label for="discovery">Discovery</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th><p>Accès Web</p></th>
+                <td>
+                    <img src="images/icon-ok-32x32.png" alt="ok">
+                </td>
+                <td><img src="images/icon-ok-32x32.png" alt="ok"></td>
+                <td><img src="images/icon-ok-32x32.png" alt="ok"></td>
+            </tr>
+            <tr>
+                <th><p>Accès mobile</p></th>
+                <td><img src="images/icon-ok-32x32.png" alt="ok"></td>
+                <td><img src="images/icon-ok-32x32.png" alt="ok"></td>
+                <td><img src="images/icon-not-ok-32x32.png" alt="ok"></td>
+            </tr>
+            <tr>
+                <th><p>Ecoute illimitée</p></th>
+                <td><img src="images/icon-ok-32x32.png" alt="ok"></td>
+                <td><img src="images/icon-not-ok-32x32.png" alt="ok"></td>
+                <td><img src="images/icon-not-ok-32x32.png" alt="ok"></td>
+            </tr>
+            <tr>
+                <th><p>Tarifs</p></th>
+                <td><p>11.99€/mois</p></td>
+                <td><p>5.99€/mois</p></td>
+                <td><p>Gratuit 1 mois</p></td>
+            </tr>
+            </tbody>
+
+        </table>
+
+    </fieldset>
+
+    <div class="checkboxes">
+        <div>
+            <input type="checkbox" name="newsletters" id="newsletters">
+            <label for="newsletters">Recevoir nos newsletters</label>
+        </div>
+        <div>
+            <input type="checkbox" name="newsletters" id="partnerNewsletters">
+            <label for="partnerNewsletters">Recevoir les newsletters de nos partenaires</label>
+        </div>
+
+    </div>
+
+    <div class="buttonsGroup">
+        <input type="reset" value="Annuler">
+        <input type="submit" value="Valider">
+    </div>
+
+</form>
+
+<footer>
+    <a href="mailto:contact@eni-ecole.fr">ENI ECOLE</a>
+    <a href="https://www.eni-ecole.fr/" target="_blank">Copyright &copy; ENI ECOLE Informatique</a>
+</footer>
+</body>
+
+</html>
