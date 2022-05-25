@@ -1,22 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#userAvatar{
+#userAvatar {
     height: 6rem;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,51 +25,61 @@ nav ul{
 
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
-}
-nav ul li a:hover{
-    color: #00bcd4;
+    border: 1px solid black;
+    padding: 0.6rem 1rem;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(28, 28, 28, 1) 100%);
 }
 
-#groupImg{
+nav ul li a:hover {
+    color: #00bcd4;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(230, 161, 15, 1) 100%);
+}
+
+#groupImg {
     display: flex;
     justify-content: center;
-    width : 20rem;
+    width: 20rem;
     margin: 0 auto;
 }
 
-#groupImg img{
+#groupImg img {
     width: 100%;
 
 }
-article div{
+
+article div {
     width: 100%
 }
-#logo_rhcp{
+
+#logo_rhcp {
     width: 25%;
     float: right;
+    margin-left: 0.5rem;
 }
 
-#infosGroup{
+#group-rhcp {
+    width: 40%;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+#infosGroup {
     display: flex;
     justify-content: space-between;
-    /*align-items: flex-start;*/
     flex-direction: row;
 }
 
-#discography{
-    border: solid black 1px;
-    border-radius: 3%;
-
+#discography {
     display: flex;
     flex-direction: column;
     padding-left: 1rem;
@@ -76,9 +87,7 @@ article div{
     padding-right: 1rem;
 }
 
-#membership{
-    border: solid black 1px;
-    border-radius: 3%;
+#membership {
     width: 16rem;
     display: flex;
     flex-direction: column;
@@ -87,33 +96,32 @@ article div{
     padding-right: 1rem;
 }
 
-h3{
+h3 {
     margin-bottom: 0;
 }
 
-#userStatus{
+#userStatus {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#userStatus a:hover{
+#userStatus a:hover {
     color: #00bcd4;
-
 }
 
 
-#userStatus_title{
+#userStatus_title {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#name{
+#name {
     margin-right: 1rem;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -123,62 +131,114 @@ footer{
 
 /***FORM***/
 
+form {
+    margin-top: 2rem;
+    background-color: #AAABBC;
+    border: 2px solid #8B8982;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 7px -5px 10px 0px #4B0082, 11px -9px 10px 0px #0000FF, 16px -14px 10px 0px #00FF00, 20px -17px 10px 0px #FFFF00, 24px -19px 10px 0px #FF7F00, 27px -23px 10px 0px #FF0000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
 
-.fieldsetForm{
+.fieldsetForm {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.fieldsetForm_detail input{
+
+.fieldsetForm_detail input {
     width: 10rem;
+    border-radius: 3px;
 }
-select{
+
+select {
     width: 10.5rem;
 }
-.fieldsetForm_group{
+
+th label {
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+th p {
+    color: #FFFFFF;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.fieldsetForm_group {
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: space-between;
 }
 
-label{
+legend {
+    margin: 0.5rem;
+}
+
+label {
     margin-right: 0.5rem;
 }
 
-.fieldsetForm_detail{
+.fieldsetForm_detail {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     margin-bottom: 1rem;
 }
-table{
+
+table {
     margin: 0 auto;
 }
 
-td{
+td {
     text-align: center;
 }
 
-.checkboxes{
+.checkboxes {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-.buttonsGroup{
+
+.buttonsGroup {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem;
 }
-.buttonsGroup input{
+
+.buttonsGroup input {
     margin: 0 1rem;
 }
-.buttonsGroup input:hover{
+
+.buttonsGroup input:hover {
     background-color: #00bcd4;
     color: white;
 }
-input:hover{
+
+input:hover {
     cursor: pointer;
 }
+
+fieldset input:empty {
+    border-color: red;
+}
+
+fieldset input:focus {
+    border-color: blue;
+}
+
+fieldset input:valid {
+    border-color: green;
+}
+
+
 
